@@ -7,13 +7,13 @@ const Footer = () => {
 
             <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
                 <a>
-                Terms of Service
+                    Terms of Service
                 </a>
                 <a>
-                Privacy Policy
+                    Privacy Policy
                 </a>
                 <a>
-                Legal
+                    Legal
                 </a>
             </nav>
     </footer>
