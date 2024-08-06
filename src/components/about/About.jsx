@@ -4,8 +4,8 @@ import Suit_Pocket from "/assets/Suit_Hand_Pocket.jpg";
 
 const About_US = () => {
     return ( 
-        <div className="bg-white py-16 px-6">
-            <div className="flex items-center justify-between my-20">
+        <div className="bg-white py-16">
+            <div className="flex items-center justify-between my-20 px-6">
             <div className="flex w-1/2 h-full">
                 <img src={Suit_Holding} alt="Someone Holding is suit" className="w-1/2 h-full translate-y-10"/>
                 <img src={Suit_Pocket} alt="Someone Putting is hand in his suit" className="w-1/2 h-full translate-x-6" />
@@ -37,7 +37,7 @@ const About_US = () => {
         </div>
 
 
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between py-16 my-10 bg-gray-50 px-6">
             <div className="w-2/5">
                 <h2 className="text-5xl font-bold text-black leading-[80px]">
                     25 YEARS OF EXPERIENCED TAILOR
@@ -58,20 +58,105 @@ const About_US = () => {
             <div className="w-1/2">
                 <div>
                     <h3 className="text-black text-lg font-semibold">Precision Tailoring</h3>
-                    <progress className="progress w-full h-5 rounded-none my-2.5 progress-black" value={80} max="100"></progress>
+                    <progress className="progress w-full h-5 my-2.5 progress-black bg-black" value={80} max="100"></progress>
                 </div>
 
                 <div>
                     <h3 className="text-black text-lg font-semibold">Material Quality</h3>
-                    <progress className="progress w-full h-5 rounded-none my-2.5 progress-black" value={75} max="100"></progress>
+                    <progress className="progress w-full h-5 bg-black my-2.5 progress-black" value={75} max="100"></progress>
                 </div>
 
                 <div>
                     <h3 className="text-black text-lg font-semibold">Time Working</h3>
-                    <progress className="progress w-full h-5 rounded-none my-2.5 progress-black" value={72} max="100"></progress>
+                    <progress className="progress w-full h-5 bg-black my-2.5 progress-black" value={72} max="100"></progress>
                 </div>
             </div>
         </div>
+
+
+        <div
+        className="h-dvh flex items-center justify-end p-4"
+        style={{
+            background: "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0, 0.6)), url('/assets/Man_Walking.jpg')",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundAttachment:"fixed"
+        }}
+        >
+            <div className="w-1/2">
+                <h2 className="text-5xl text-white text-end leading-[80px] font-bold">
+                    ARE YOU READY TO WEAR OUR BEST FASHION WORK?
+                </h2>
+                <p className="text-end text-white my-4 leading-8">
+                    From luxurious fabrics to refined details, we craft wedding suits that stand the test of time. 
+                    Whether you envision a traditional tuxedo, a contemporary slim-fit suit.
+                </p>  
+
+                <div className="flex justify-end">
+                    <a href="#contact" className="inline-block text-xl text-white my-4 border border-solid py-3 px-6 hover:text-black hover:bg-white transition-all ease-in-out delay-100 duration-150"> Contact Us </a>
+                </div>
+            </div>
+        </div>
+
+        <div className="py-20">
+            <h2 className="text-center text-5xl font-bold text-black">HOW WE WORK</h2>
+            <p className="text-center text-gray-700 w-1/2 mx-auto my-3">
+                Make a lasting impression on your special day with a wedding suit that celebrates your individuality and complements your bride beautifully.
+            </p>
+
+
+            <div className="flex justify-between mt-32 mb-24 px-10">
+                <div className="text-center w-1/4">
+                    <h2 className="text-3xl font-semibold text-black my-4">Design</h2>
+                    <p className="text-base text-gray-700">
+                        The design process is where your unique vision comes to life. 
+                        We start by understanding your individual style.
+                    </p>
+                </div>
+
+                <div className="text-center w-1/4">
+                    <h2 className="text-3xl font-semibold text-black my-4">Working</h2>
+                    <p className="text-base text-gray-700">
+                        Our skilled artisans bring the design to fruition with precision and dedication. 
+                    </p>
+                </div>
+
+                <div className="text-center w-1/4">
+                    <h2 className="text-3xl font-semibold text-black my-4">Finishing</h2>
+                    <p className="text-base font-normal text-gray-700">
+                        The finishing touches are what elevate our suits to a level of true sophistication.
+                    </p>
+                </div>
+            </div>
+
+            <div
+            className="h-dvh flex"
+            style={{
+                background: "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0, 0.6)), url('/assets/HoldSuit_.jpg')",
+                backgroundPosition: "center",
+                backgroundSize: "cover"
+                // backgroundAttachment:"fixed"
+            }}
+            >
+                <div className="w-1/4 border border-r-white pt-20">
+                    <h2 className="text-center text-2xl font-medium text-white">Casual Suit</h2>
+                </div>
+
+                <div className="w-1/4 border border-r-white pt-20">
+                    <h2 className="text-center text-2xl font-medium text-white">Grooms Suit</h2>
+                </div>
+
+                <div className="w-1/4 border border-r-white pt-20">
+                    <h2 className="text-center text-2xl font-medium text-white">Basic Suit</h2>
+                </div>
+
+                <div className="w-1/4 border border-r-white pt-20">
+                    <h2 className="text-center text-2xl font-medium text-white">Fashion Cloth</h2>
+                </div>
+            </div>
+        </div>
+
+
         </div>
         
      );
