@@ -10,7 +10,7 @@ const Home = () => {
         }}
         >
             <div className="text-center">
-                <h1 className="text-6xl font-bold text-white leading-[80px]">
+                <h1 className="md:leading-[80px] md:text-6xl leading-10 text-3xl font-bold text-white">
                     THE BEST PERSONALISED FASHION DESIGNING SERVICES
                 </h1>
 
