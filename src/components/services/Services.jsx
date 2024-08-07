@@ -4,7 +4,7 @@ import Second_Service_Img from '/assets/Service_Second_Pic.jpg';
 
 const Services = () => {
     return ( 
-        <div className="bg-white py-10 px-6">
+        <div className="bg-white md:py-10 pt-6 px-6">
             <h1 className="md:text-5xl text-3xl font-bold text-black text-center md:text-start">SERVICES</h1>
 
             <p className="md:w-1/2 w-full text-sm my-5 text-gray-900">
