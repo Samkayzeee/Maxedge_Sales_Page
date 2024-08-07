@@ -13,7 +13,7 @@ const About_US = () => {
             </div>
 
             <div className="md:w-5/12 w-full">
-                <h2 className="text-6xl font-bold my-2 text-black">About Us</h2>
+                <h2 className="md:text-6xl text-3xl font-bold my-2 text-black">About Us</h2>
                 <p className="text-gray-600 leading-7">
                     we specialize in crafting custom wedding suits that embody elegance, sophistication, and personal style. 
                     Our expert tailors dedicate themselves to creating perfectly fitted suits, using only the finest fabrics and meticulous attention to detail. 
