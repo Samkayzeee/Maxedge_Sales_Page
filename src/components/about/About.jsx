@@ -4,7 +4,7 @@ import Suit_Pocket from "/assets/Suit_Hand_Pocket.jpg";
 
 const About_US = () => {
     return ( 
-        <div className="bg-white py-10">
+        <div className="bg-white py-10 pt-1">
             {/* first section About section */}
             <div className="flex md:flex-row flex-col-reverse items-center justify-between md:my-20 my-2 px-6">
             <div className="flex md:w-1/2 w-full h-full md:flex-row flex-col">

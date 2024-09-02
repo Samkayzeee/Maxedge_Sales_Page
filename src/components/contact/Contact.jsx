@@ -9,7 +9,7 @@ const Contact_US = () => {
             </div>
 
             <div className="text-gray-100">
-                You can message us on whatsapp  <a href="https://wa.me/15551234567?text=Hello%2C%20I%20am%20interested%20in%20your%20services" target="_blank" className="text-red-500">Message Us</a>   
+                You can message us on whatsapp  <a href="https://wa.me/+2347019665230?text=Hello%2C%20I%20am%20interested%20in%20your%20services" target="_blank" className="text-red-500">Message Us</a>   
             </div>
             </div>
 
