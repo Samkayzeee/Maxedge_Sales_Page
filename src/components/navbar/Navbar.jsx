@@ -30,7 +30,7 @@ const Navbar = () => {
             {
               link.map((link, index) => {
                   return(
-                      <li key={index} className="ms-2"> <a href={link.url} className="text-gray-300"> { link.name } </a> </li>
+                      <li key={index} className="ms-2"> <a href={link.url} className="border border-black bg-black text-white"> { link.name } </a> </li>
                   )
               })
             }

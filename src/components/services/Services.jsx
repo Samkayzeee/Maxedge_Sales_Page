@@ -2,6 +2,24 @@ import First_Service_Img from '/assets/Service_First_Pic.jpg';
 import Second_Service_Img from '/assets/Service_Second_Pic.jpg';
 
 
+
+
+const products = [
+    {
+        id:1,
+        img_url:'/products/first_men_cloth.jpg'
+    },
+    {
+        id:2,
+        img_url:'/products/second_men_cloth.jpg'
+    },
+    {
+        id:3,
+        img_url:"/products/third_men_cloth.jpg"
+    }
+]
+
+
 const Services = () => {
     return ( 
         <div className="bg-white md:py-10 pt-6 px-6">
@@ -40,6 +58,36 @@ const Services = () => {
                         </p>
                     </div>
                 </div>
+            </div>
+
+
+            <div className='mt-20 py-5 '>
+                <h2 className='text-center md:text-4xl text-2xl font-bold text-black my-6'> Some Featured Products. </h2>
+                <div className='flex md:flex-row flex-col'>
+            {
+                products.slice(0, 6).map(product => {
+                    return(
+                            <div className="card bg-base-100 image-full md:w-1/4 w-11/12 mx-auto shadow-xl my-4 h-96" key={product.id}>
+                                <figure className="w-full h-full">
+                                    <img
+                                    src={product.img_url}
+                                    alt={"Featured products"} 
+                                    className="w-full h-full object-cover"/>
+                                </figure>
+                                <div className="card-body">
+                                    <h2 className="card-title font-bold"> Featured Products. </h2>
+                                    <p> For more Details click on Buy now to negotiate with us. </p>
+
+                                    <div className="card-actions justify-end items-center">
+                                        {/* <h2 className="font-bold"> { "NGN5K" } </h2> */}
+                                        <a href="https://wa.me/+2347019665230?text=Hello%2C%20I%20am%20interested%20in%20your%20services" target='blank' className="btn border-0 bg-orange-800 transition-all ease-in-out duration-150 hover:bg-orange-900">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                    )
+                })
+            }
+            </div>
             </div>
         </div>
      );
